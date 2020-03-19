@@ -2,9 +2,11 @@ public class Funciones {
 
 	public static void main(String[] args) {
 
-		String [] CadenaNombres = {"Rafa","Berny","Vladi","Jose"};
 
-		System.out.println(Funcion4(CadenaNombres));
+                int [] numero = {2,8,16,48};
+
+
+		System.out.println(Funcion5(numero));
 	}
 
 	public static Boolean Funcion1(int num) {
@@ -33,7 +35,7 @@ public class Funciones {
 		int y = 250 - 50;
 		int x = 250 + 50;
 
-		if (num <= x || num >= y) {
+		if (num <= x && num >= y) {
 
 			resp = true;
 
@@ -76,5 +78,18 @@ public class Funciones {
 		return CadenaConcatenada;
 
 	}
+	public int Funcion5(int [] num) {
 
+		int tam = num.length;
+		int sum = 0; 
+		int [] numarray = new int [tam];
+
+		for (int cont = 0; cont < tam; cont++) {
+			numarray[cont] = num[cont];
+			sum = sum + numarray[cont];
+		}
+
+		return sum;
+
+	}
 }
