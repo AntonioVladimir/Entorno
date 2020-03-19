@@ -33,7 +33,7 @@ public class Funciones {
 		int y = 250 - 50;
 		int x = 250 + 50;
 
-		if (num <= x || num >= y) {
+		if (num <= x && num >= y) {
 
 			resp = true;
 
