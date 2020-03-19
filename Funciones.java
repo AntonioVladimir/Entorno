@@ -78,7 +78,7 @@ public class Funciones {
 		return CadenaConcatenada;
 
 	}
-	public int Funcion5(int [] num) {
+	public static int Funcion5(int [] num) {
 
 		int tam = num.length;
 		int sum = 0; 
