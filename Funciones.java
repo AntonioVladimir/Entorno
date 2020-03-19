@@ -2,7 +2,7 @@ public class Funciones {
 	
 	public static void main(String[] args) {
 
-		System.out.println(Funcion2(258));
+		System.out.println(Funcion3(21));
 	}
 	
 	public static Boolean Funcion1(int num) {
@@ -42,4 +42,23 @@ public class Funciones {
 		return resp;
 
 	}
+
+	public static int Funcion3(int num) {
+
+
+		int x = 7;
+		int ymenos = 250-50;
+		int ymas = 250+50;
+		int rang = (int)Math.floor(Math.random()*(ymas+ymenos));
+		int result = 0;
+
+		if (num%x == 0) {
+			result = rang%num;
+		}
+
+		return result;
+
+	}
+
+
 }
