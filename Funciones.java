@@ -1,10 +1,12 @@
 public class Funciones {
-	
+
 	public static void main(String[] args) {
 
-		System.out.println(Funcion3(21));
+		String [] CadenaNombres = {"Rafa","Berny","Vladi","Jose"};
+
+		System.out.println(Funcion4(CadenaNombres));
 	}
-	
+
 	public static Boolean Funcion1(int num) {
 
 		Boolean resp = null;
@@ -60,5 +62,19 @@ public class Funciones {
 
 	}
 
+	public static String Funcion4(String[] CadenaNombres) {
+
+		String CadenaConcatenada = null;
+		for (int i = 0; i < CadenaNombres.length; i++) {
+
+			CadenaConcatenada = CadenaNombres[0] + "-" + CadenaNombres[1] + "-" + CadenaNombres[2] + "-"
+					+ CadenaNombres[3];
+		}
+		CadenaConcatenada = CadenaConcatenada.replaceAll("[AaEeIiOoUu]", "");
+		CadenaConcatenada = CadenaConcatenada.replaceAll("[A-Z]", "");
+		System.out.println(CadenaConcatenada);
+		return CadenaConcatenada;
+
+	}
 
 }
