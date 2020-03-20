@@ -3,8 +3,10 @@ public class Funciones {
 	    public static void main(String[] args) {
 
 
-		String[] cadenaDeNombres = { "Hipopotamo", "Murcielago", "Locomotora", "Sacapuntas" };
-		System.out.println(Funcion7(cadenaDeNombres));
+		String[] alumnos = { "Antonio", "Gabri", "Jorge", "Azahara" };
+		int[][] tiemposDeTrabajo = {{5,6,7,8},{1,2,3,4}} ;
+
+		System.out.println(Funcion8(alumnos, tiemposDeTrabajo));
 
         }
 
@@ -128,4 +130,20 @@ public class Funciones {
 		}
 		return Arrays.toString(cadenaDeNombres);
 	}
+	public static boolean Funcion8(String[] alumnos, int[][] tiemposDeTrabajos){	       
+				int t = 500;
+		        int sumatorio = 0;
+		        boolean result = true;
+		        for(int i = 0; i < tiemposDeTrabajos.length; i++){
+		            sumatorio = 0;
+		            for(int j = 0; j < tiemposDeTrabajos.length; j++){
+		                sumatorio += tiemposDeTrabajos[j][i];
+		            }
+		            if(sumatorio<=t){
+		                result = false;
+		            }
+		        }
+		        return result;
+		}
+
 }
