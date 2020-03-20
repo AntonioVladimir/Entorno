@@ -2,10 +2,14 @@ public class Funciones {
 
 	    public static void main(String[] args) {
 
-                double [] num1 = {2,8,16,48};
+
+		String[] cadenaDeNombres = { "Hipopotamo", "Murcielago", "Locomotora", "Sacapuntas" };
+		System.out.println(Funcion7(cadenaDeNombres));
+
+        }
 
 
-		System.out.println(Funcion6(num1));
+
 	}
 
 	public static Boolean Funcion1(int num) {
@@ -114,4 +118,14 @@ public class Funciones {
 
 
         }
+	public static  String Funcion7(String[] cadenaDeNombres){
+
+
+		for (int i = 0; i < cadenaDeNombres.length; i++) {
+
+			cadenaDeNombres[i] = cadenaDeNombres[i].substring(4, 7);
+
+		}
+		return Arrays.toString(cadenaDeNombres);
+	}
 }
