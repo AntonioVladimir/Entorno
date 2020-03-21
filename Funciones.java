@@ -1,11 +1,5 @@
 public class Funciones {
 
-	public static void main(String[] args) {
-
-		String [] CadenaNombres = {"Rafa","Berny","Vladi","Jose"};
-
-		System.out.println(Funcion4(CadenaNombres));
-	}
 
 	public static Boolean Funcion1(int num) {
 
