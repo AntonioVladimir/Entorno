@@ -39,30 +39,20 @@ public class TestFuncion3 {
 		}
 
 		@Test//Aqui comienza las pruebas de Jose Manuel
-		@DisplayName("Test de Caja Negra Comprobación divisible x y rango de y")
-		void testTrue() {
+		@DisplayName("Test de Caja Negra Comprobación la salida no es nula")
+		void testNoNulo() {
 
-
-			assertEquals(0,func.Funcion3(350));//Tiene que salir un numero que es el resultado
-
-		}
-
-		@Test
-		@DisplayName("Test de Caja Negra Comprobación divisible x y rango de y")
-		void testTrue2() {
-
-
-			//Tiene que salir un numero que es el resultado
-			assertEquals(0,func.Funcion3(7));
-
+			//Estamo comprobando que la salida del metodo no se nula
+			assertNotNull(func.Funcion3(1));
 
 		}
+		
 		@Test
-		@DisplayName("Test de Caja Negra Comprobación divisible x y rango de y")
-		void testFalse() {
+		@DisplayName("Test de Caja Negra Comprobación la salida se correcta")
+		void testEsCero() {
 
-			////Tiene que salir 0 ya que no es difisible
-			assertEquals(0,func.Funcion3(1));
+			//Estamo comprobando que la salida salga 0, ya que no es divisible entre 7
+			assertEquals(0,func.Funcion3(4));
 
 		}
 
