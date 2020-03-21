@@ -35,7 +35,7 @@ public class TestFuncion5 {
 		func = null;
 		System.out.println("Se han terminado de ejecutar todas las pruebas");
 	}
-
+	//Prueba realizada por Rafael Oliva Ramirez
 	@Test
 	@DisplayName("Test de Caja Negra Prueba Comprobacion Resultado (Rafael)")
 	void Rafael() {
