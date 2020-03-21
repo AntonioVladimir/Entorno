@@ -46,7 +46,7 @@ public class TestFuncion1 {
 	void testFalse() {
 
 		//Estamos comprobando si la salida es correcta.
-		assertFalse(func.Funcion1(20));
+		assertFalse(func.Funcion1(20)); 
 
 	}
 
