@@ -80,7 +80,7 @@ public class Funciones {
 
 	}
 
-	public static int Funcion5(int[] num) {
+	public int Funcion5(int[] num) {
 
 		int tam = num.length;
 		int sum = 0;
