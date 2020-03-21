@@ -29,12 +29,13 @@ public class Funcion2Test1 {
 		func = null;
 		System.out.println("Se han terminado de ejecutar todas las pruebas");
 	}
+
 	@Test
 	@DisplayName("Test de Caja Negra Comprobación de Rango.")
 	void testTrue() {
 
 		//Estamo comprobando si la salida es correcta, True si esta en el Rango y False si no esta.
-		assertTrue(Funciones.Funcion2(230));//Tiene que salir True
+		assertTrue(func.Funcion2(230));//Tiene que salir True
 
 	}
 
@@ -43,7 +44,7 @@ public class Funcion2Test1 {
 	void testFalse() {
 
 		//Estamo comprobando si la salida es correcta, True si esta en el Rango y False si no esta.
-		assertFalse(Funciones.Funcion2(20));//Tiene que salir False
+		assertFalse(func.Funcion2(20));//Tiene que salir False
 
 	}
 
@@ -52,7 +53,7 @@ public class Funcion2Test1 {
 	void testNull() {
 
 		//Estamo comprobando si la salida sale nula.
-		assertNotNull(Funciones.Funcion2(289));
+		assertNotNull(func.Funcion2(289));
 
 	}
 
