@@ -30,6 +30,8 @@ public class Funcion2Test1 {
 		System.out.println("Se han terminado de ejecutar todas las pruebas");
 	}
 
+	//Test realizado por Rafael Oliva Ramirez
+	
 	@Test
 	@DisplayName("Test de Caja Negra Comprobación de Rango.")
 	void testTrue() {
