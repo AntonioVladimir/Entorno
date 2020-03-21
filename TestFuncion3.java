@@ -11,11 +11,11 @@ import org.junit.jupiter.api.Test;
 
 public class TestFuncion3 {
 
-		 int contpruebas = 0;
-		 Funciones func = null;
+		static int contpruebas = 0;
+		static Funciones func = null;
 
 		@BeforeAll
-		void prepararPruebas() {
+		static void prepararPruebas() {
 			System.out.println("Empezamos las Pruebas.");
 			func = new Funciones();
 		}
@@ -32,7 +32,7 @@ public class TestFuncion3 {
 		}
 
 		@AfterAll
-		 void terminarPruebas() {
+		static void terminarPruebas() {
 			contpruebas = 0;
 			func = null;
 			System.out.println("Se han terminado de ejecutar todas las pruebas");
