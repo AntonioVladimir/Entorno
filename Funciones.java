@@ -1,15 +1,6 @@
 public class Funciones {
-
-	public static void main(String[] args) {
-
-
-                int [] numero = {2,8,16,48};
-
-
-		System.out.println(Funcion5(numero));
-	}
-
-	public static Boolean Funcion1(int num) {
+	public Funciones() {}
+	public Boolean Funcion1(int num) {
 
 		Boolean resp = null;
 
@@ -27,8 +18,7 @@ public class Funciones {
 
 	}
 
-
-	public static Boolean Funcion2(int num) {
+	public Boolean Funcion2(int num) {
 
 		Boolean resp = null;
 
@@ -47,38 +37,45 @@ public class Funciones {
 
 	}
 
-	public static int Funcion3(int num) {
-
+	public int Funcion3(int num) {
 
 		int x = 7;
-		int ymenos = 250-50;
-		int ymas = 250+50;
-		int rang = (int)Math.floor(Math.random()*(ymas+ymenos));
+		int ymenos = 250 - 50;
+		int ymas = 250 + 50;
+		int rang = (int) Math.floor(Math.random() * (ymas + ymenos));
 		int result = 0;
 
-		if (num%x == 0) {
-			result = rang%num;
+		if (num % x == 0) {
+			result = rang % num;
 		}
 
 		return result;
 
 	}
 
-	public static String Funcion4(String[] CadenaNombres) {
-
+	public String Funcion4(String[] CadenaNombres) {
+		
 		String CadenaConcatenada = null;
-		for (int i = 0; i < CadenaNombres.length; i++) {
+		if (CadenaNombres != null) {
+			for (int i = 0; i < CadenaNombres.length; i++) {
+				// Separaré los nombres con guiones para que el resultado sea leguible,
+				// si desdeasemos que no hubieran guiones quitariamos los "-"
+				CadenaConcatenada = CadenaNombres[0] + "-" + CadenaNombres[1] + "-" + CadenaNombres[2] + "-"
+						+ CadenaNombres[3];
+			}
+			;
 
-			CadenaConcatenada = CadenaNombres[0] + "-" + CadenaNombres[1] + "-" + CadenaNombres[2] + "-"
-					+ CadenaNombres[3];
+		} else {
+			CadenaNombres = null;
 		}
+
 		CadenaConcatenada = CadenaConcatenada.replaceAll("[AaEeIiOoUu]", "");
 		CadenaConcatenada = CadenaConcatenada.replaceAll("[A-Z]", "");
 		System.out.println(CadenaConcatenada);
 		return CadenaConcatenada;
 
 	}
-	public static int Funcion5(int [] num) {
+	public int Funcion5(int [] num) {
 
 		int tam = num.length;
 		int sum = 0; 
