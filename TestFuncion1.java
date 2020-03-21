@@ -54,10 +54,17 @@ public class TestFuncion1 {
 	@DisplayName("Test de Caja Negra Comprobación de la salida resultado")
 	void testNull() {
 
-		
+
 		assertNotNull(func.Funcion2(289));
 
 	}
 
+	@Test//Prueba Realizada por Jose Manuel
+	@DisplayName("Test de Caja Negra Comprobación de Rango.")
+	void testTrue() {
+
+	//Nos devolvera True ya que un numero negativo se puede dividir entre un positivo
+		assertTrue(func.Funcion1(-210));
+	}
 }
 
