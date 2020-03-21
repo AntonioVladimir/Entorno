@@ -36,7 +36,8 @@ public class TestFuncion8 {
 				func = null;
 				System.out.println("Se han terminado de ejecutar todas las pruebas");
 			}
-			@Test
+
+			@Test//Pruebas realizadas por Jose Manuel
 			@DisplayName("Test de Caja Negra Comprobación de Rango.")
 			void testFalse() {//suma los tiempos
 
