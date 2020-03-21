@@ -124,7 +124,7 @@ public class Funciones {
 
                 String cadena = listaDeCadenas[i];
 
-                if (cadena != ""){
+                if (!cadena.equals("")){
                     listaDeCadenas[i] = cadena.substring(4, 7);
                 }else {
                 	cadena ="";
