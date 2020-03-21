@@ -37,7 +37,7 @@ public class TestFuncion1 {
 	void testTrue() {
 
 		//Estamos comprobando si la salida es correcta.
-		assertTrue(func.Funcion2(230));
+		assertTrue(func.Funcion1(230));
 
 	}
 
@@ -46,7 +46,7 @@ public class TestFuncion1 {
 	void testFalse() {
 
 		//Estamos comprobando si la salida es correcta.
-		assertFalse(func.Funcion2(20));
+		assertFalse(func.Funcion1(20)); 
 
 	}
 
@@ -55,7 +55,8 @@ public class TestFuncion1 {
 	void testNull() {
 
 
-		assertNotNull(func.Funcion2(289));
+
+		assertNotNull(func.Funcion1(7));
 
 	}
 
