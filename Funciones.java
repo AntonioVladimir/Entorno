@@ -115,15 +115,31 @@ public class Funciones {
 
 	}
 
-	public String Funcion7(String[] cadenaDeNombres) {
+	public String Funcion7(String[] listaDeCadenas) {
 
-		for (int i = 0; i < cadenaDeNombres.length; i++) {
 
-			cadenaDeNombres[i] = cadenaDeNombres[i].substring(4, 7);
+        if (listaDeCadenas != null) {
 
-		}
-		return Arrays.toString(cadenaDeNombres);
-	}
+            for (int i = 0; i < listaDeCadenas.length; i++) {
+
+                String cadena = listaDeCadenas[i];
+
+                if (cadena != ""){
+                    listaDeCadenas[i] = cadena.substring(4, 7);
+                }else {
+                	cadena ="";
+                }
+                		
+            }
+
+        } else {
+            listaDeCadenas = null;
+        }
+
+        return Arrays.toString(listaDeCadenas);
+
+    	}
+	
 	public boolean Funcion8(String[] alumnos, int[][] tiemposDeTrabajos){	       
 				int t = 500;
 		        int sumatorio = 0;
