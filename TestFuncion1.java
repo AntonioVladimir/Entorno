@@ -30,6 +30,7 @@ public class TestFuncion1 {
 		func = null;
 		System.out.println("Se han terminado de ejecutar todas las pruebas");
 	}
+	//test realizado por Berny Jimenez Sanchez
 
 	@Test
 	@DisplayName("Test de Caja Negra Comprobación numero es divisible entre x")
