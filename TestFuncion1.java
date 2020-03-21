@@ -67,5 +67,13 @@ public class TestFuncion1 {
 	//Nos devolvera True ya que un numero negativo se puede dividir entre un positivo
 		assertTrue(func.Funcion1(-210));
 	}
+
+	//Prueba realizada por Rafael Oliva Ramirez
+	@Test
+	@DisplayName("Test de Caja Negra Compruebo la salida del metodo")
+	void testIgual() {
+		assertSame(true, func.Funcion1(21));//la salida tiene que ser true
+	}
+
 }
 
