@@ -56,6 +56,16 @@ public class TestFuncion3 {
 
 		}
 
+		//Pruebas realizadas por Rafael Oliva Ramirez
+		@Test
+		@DisplayName("Test de Caja Negra Comprobación no es 0")
+		void testNotSame() {
+
+			//Estamo comprobando que la salida no se 0, ya que es divisible entre 7
+			assertNotSame(0,func.Funcion3(21));
+
+		}
+
 	}
 
 
