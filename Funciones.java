@@ -1,14 +1,6 @@
 public class Funciones {
-
-	    public static void main(String[] args) {
-
-                double [] num1 = {2,8,16,48};
-
-
-		System.out.println(Funcion6(num1));
-	}
-
-	public static Boolean Funcion1(int num) {
+   
+	public Boolean Funcion1(int num) {
 
 		Boolean resp = null;
 
@@ -27,7 +19,7 @@ public class Funciones {
 	}
 
 
-	public static Boolean Funcion2(int num) {
+	public  Boolean Funcion2(int num) {
 
 		Boolean resp = null;
 
@@ -46,7 +38,7 @@ public class Funciones {
 
 	}
 
-	public static int Funcion3(int num) {
+	public  int Funcion3(int num) {
 
 
 		int x = 7;
@@ -63,7 +55,7 @@ public class Funciones {
 
 	}
 
-	public static String Funcion4(String[] CadenaNombres) {
+	public  String Funcion4(String[] CadenaNombres) {
 
 		String CadenaConcatenada = null;
 		for (int i = 0; i < CadenaNombres.length; i++) {
@@ -77,7 +69,7 @@ public class Funciones {
 		return CadenaConcatenada;
 
 	}
-	public static int Funcion5(int [] num) {
+	public  int Funcion5(int [] num) {
 
 		int tam = num.length;
 		int sum = 0; 
@@ -92,7 +84,7 @@ public class Funciones {
 
 	}
 
-	public static double Funcion6(double [] num1) {
+	public  String Funcion6(double [] num1) {
 
         	double [] num2 = new double [num1.length];
         	double z = 4;
@@ -102,16 +94,14 @@ public class Funciones {
 	        for (int cont = 0; cont < num1.length; cont++) {
         	    if (num1[cont]%2==0) {
                 	num2[cont] = num1[cont]*z; 
-                	System.out.print("  Numero Par -->  " + num2[cont]);
+                	
             	}else {
                		num2[cont] = num1[cont]*w; 
-                	System.out.print("  Numero Impar -->  " +num2[cont]);
+                	
             }
-        }
-
-
-		return z;
-
+	       }
+	        
+	       return Arrays.toString(num2);
 
         }
 }
