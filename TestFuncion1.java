@@ -36,8 +36,8 @@ public class TestFuncion1 {
 	@DisplayName("Test de Caja Negra Comprobación numero es divisible entre x")
 	void testTrue() {
 
-		//Estamo comprobando si la salida es correcta, True si esta en el Rango y False si no esta.
-		assertTrue(func.Funcion2(230));//Tiene que salir True
+		//Estamos comprobando si la salida es correcta.
+		assertTrue(func.Funcion2(230));
 
 	}
 
@@ -45,8 +45,8 @@ public class TestFuncion1 {
 	@DisplayName("Test de Caja Negra Comprobación numero no es divisible entre x")
 	void testFalse() {
 
-		//Estamo comprobando si la salida es correcta, True si esta en el Rango y False si no esta.
-		assertFalse(func.Funcion2(20));//Tiene que salir False
+		//Estamos comprobando si la salida es correcta.
+		assertFalse(func.Funcion2(20));
 
 	}
 
@@ -54,7 +54,7 @@ public class TestFuncion1 {
 	@DisplayName("Test de Caja Negra Comprobación de la salida resultado")
 	void testNull() {
 
-		//Estamo comprobando si la salida sale nula.
+		
 		assertNotNull(func.Funcion2(289));
 
 	}
