@@ -29,6 +29,7 @@ public class TestFuncion6 {
 		func = null;
 		System.out.println("Se han terminado de ejecutar todas las pruebas");
 	}
+	//pueba realizada por Berny Jimenez Sanchez
 
 	@Test
 	@DisplayName("Test de Caja Negra Comprobación numero es divisible entre x")
@@ -40,25 +41,8 @@ public class TestFuncion6 {
 		assertEquals("[257.2, 27.2, 8.0]", func.Funcion6(coas));	
 		
 	}
-/*
-	@Test
-	@DisplayName("Test de Caja Negra Comprobación numero no es divisible entre x")
-	void testFalse() {
 
-		//Estamo comprobando si la salida es correcta, True si esta en el Rango y False si no esta.
-		double [] num1 = {2,8,16,48};
-		assertFalse(func.Funcion6(num1));//Tiene que salir False
+	
 
-	}
-
-	@Test
-	@DisplayName("Test de Caja Negra Comprobación de la salida resultado")
-	void testNull() {
-
-		//Estamo comprobando si la salida sale nula.
-		assertNotNull(func.Funcion6(250));
-
-	}
-*/
 }
 
