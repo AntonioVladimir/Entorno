@@ -60,7 +60,7 @@ public class Funcion2Test1 {
 	}
 	@Test//Prueba Realizada por Jose Manuel
 	@DisplayName("Test de Caja Negra Comprobación de Rango.")
-	void testFalse() {
+	void testComprobRang() {
 
 	//Debe dividir en un numero negativo y al no poder saldra false
 		assertFalse(func.Funcion2(-250));
