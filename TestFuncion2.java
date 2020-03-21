@@ -56,5 +56,14 @@ public class Funcion2Test1 {
 		assertNotNull(func.Funcion2(289));
 
 	}
+	@Test//Prueba Realizada por Jose Manuel
+	@DisplayName("Test de Caja Negra Comprobación de Rango.")
+	void testFalse() {
+
+	//Debe dividir en un numero negativo y al no poder saldra false
+		assertFalse(func.Funcion2(-250));
+
+
+	}
 
 }
