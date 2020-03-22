@@ -37,8 +37,8 @@ public class TestFuncion6 {
 
 		//Estamo comprobando si la salida es correcta, True si esta en el Rango y False si no esta.
 		//assertTrue(func.Funcion6(50));//Tiene que salir True
-		double [] coas = {64.3,6.8,2};  
-		assertEquals("[257.2, 27.2, 8.0]", func.Funcion6(coas));	
+		double [] coas = {64.3,6.8,2};
+		assertEquals("[257.2, 27.2, 8.0]", func.Funcion6(coas));
 	}
 
 	//Prueba realizada por Rafael Oliva Ramirez
@@ -57,8 +57,8 @@ public class TestFuncion6 {
 
 		double[] num1 = { 2.2, 8.4, 16, 48 };
 		assertNotSame("[8.8, 33.6, 64, 192]", func.Funcion6(num1));
-	} 
-	
+	}
+
 	// Prueba realizada por Antonio Vladimir Ortega Chinchilla
 	@Test
 	@DisplayName("Test de Caja Negra con  valor igual a 0")
@@ -67,4 +67,11 @@ public class TestFuncion6 {
 		assertEquals("[0.0]", func.Funcion6(num1));
 	}
 
+	// Prueba realizada por Jose Manuel
+	@Test
+	@DisplayName("Test de Caja Negra comprueba de resultado")
+	void testResultado() {
+		double[] num1 = { 2.4, 4.8 };
+		assertNotEquals("[19.6, 9.2]", func.Funcion6(num1));
+	}
 }
