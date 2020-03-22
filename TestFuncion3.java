@@ -75,4 +75,14 @@ public class TestFuncion3 {
 
 	}
 
+	//Pruebas realizadas por Berny Jimenez Sanchez
+		@Test
+		@DisplayName("Test de Caja Negra Comprobación no es 0")
+		void testSame() {
+
+			//Estamo comprobando que la salida es 0, ya que es divisible entre 7
+			assertSame(0,func.Funcion3(20));
+
+		}
+
 }
