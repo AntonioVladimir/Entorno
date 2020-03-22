@@ -33,38 +33,45 @@ class TestFuncion4 {
 		func = null;
 		System.out.println("Se han terminado de ejecutar todas las pruebas");
 	}
-	
+
 	//	Tests realizados por Antonio Vladimir Ortega Chinchilla
 	@Test
 	@DisplayName("Test de Caja Negra Valores Vacios")
 	void testConCadenaVacia() {
-		
+
 		String [] CadenaNombres = {"","","",""};
 		assertEquals("---", func.Funcion4(CadenaNombres));
 
 	}
-	
+
 	@Test
 	@DisplayName("Prueba con nuestros nombres concatenados, separados con - ")
 	void testConNuestrosNombres() {
-		
+
 		String [] CadenaNombres = {"Antonio","Rafael","Jose","Berny"};
 		assertEquals("ntn-fl-s-rny", func.Funcion4(CadenaNombres));
 	}
-	
+
 	@Test
 	@DisplayName("Prueba con elemento nulo")
 	void testElementosNulos(){
 		assertNull(null,null);//Funcionan en distintas versiones.
-		
+
 	}
 
 	//Pruebas realizadas por Rafael Oliva Ramirez
 	@Test
 	@DisplayName("Prueba de caja negra cuatro cadenas con un solo caracter ")
 	void testUnSoloCaracter(){
-		String [] caracter = {"A","v","b","e"};		
+		String [] caracter = {"A","v","b","e"};
 		assertEquals("-v-b-",func.Funcion4(caracter));
+	}
+	// Pruebas realizadas por Jose Manuel
+	@Test
+	@DisplayName("Prueba de caja negra comprobando con mas de 4 caracteres")
+	void test5Caracter() {
+		String[] caracter = { "HolA MunDo 15 Dias de CuAreNtena", "PePe", "PoKEmon", "AnToNIO", "KiLo" };
+		assertEquals("l n 15 s d rtn--mn-n", func.Funcion4(caracter));
 	}
 
 }
