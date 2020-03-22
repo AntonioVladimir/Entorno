@@ -9,7 +9,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 
-class TestFuncion4 {
+class TestFuncion7 {
 
 	static int contpruebas = 0;
 	static Funciones func = null;
@@ -68,5 +68,15 @@ class TestFuncion4 {
 		String [] cadenaUnElemento = {"Hipopotamo"};
 		assertEquals("[pot]",func.Funcion7(cadenaUnElemento)); 
 	}
+
+	//Tests realizados por Rafael Oliva Ramirez
+	@Test
+	@DisplayName("Test de Caja Negro Comprobación de salida nula")
+	void testnulo() {
+		String [] listaDeCadenas = {"Hipopotamo","Rinoceronte","Melocoton","Sacapuntas"};
+		String[] nulo = {null};
+		assertNotSame(nulo,func.Funcion7(listaDeCadenas));
+	}
+
 }
 
