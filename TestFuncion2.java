@@ -1,7 +1,7 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
 
-public class Funcion2Test1 {
+public class TestFuncion2 {
 
 	static int contpruebas = 0;
 	static Funciones func = null;
