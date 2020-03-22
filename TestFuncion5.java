@@ -95,4 +95,12 @@ public class TestFuncion5 {
 
 	}
 
+	//Tests realizada por Berny Jimenez Sanchez
+		@Test
+		@DisplayName("Test de Caja Negra Probamos si el resultado es correcto incluyendo numeros positivos y negativos")
+		void Test1() {
+			int [] num = {-1,-5,65};
+			assertSame(59, func.Funcion5(num));
+
+		}
 }
