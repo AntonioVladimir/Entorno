@@ -74,4 +74,11 @@ class TestFuncion4 {
 		assertEquals("l n 15 s d rtn--mn-n", func.Funcion4(caracter));
 	}
 
+	//Pruebas realizadas por Berny Jimenez Sanchez
+		@Test
+		@DisplayName("Prueba de caja negra cuatro cadenas con tres caracteres ")
+		void testtresSoloCaracter(){
+			String [] caracter = {"b","j","S",""};
+			assertEquals("b-j--",func.Funcion4(caracter));
+		}
 }
