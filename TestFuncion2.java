@@ -67,5 +67,12 @@ public class Funcion2Test1 {
 
 
 	}
+	
+	//Realizado Test por Antonio Vladimir Ortega Chinchilla
+	@Test
+	@DisplayName("Test de Caja Negra del valor limite inferior")
+	void testValorLimiteInferior() {
+		assertFalse(func.Funcion2(Integer.MIN_VALUE)); 
+	}
 
 }
