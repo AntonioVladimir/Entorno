@@ -1,5 +1,4 @@
-import java.util.Array
-s;
+import java.util.Arrays;
 
 
 public class Funciones {
@@ -80,6 +79,7 @@ public class Funciones {
 		return CadenaConcatenada;
 
 	}
+
 
 	public int Funcion5(int[] num) {
 
