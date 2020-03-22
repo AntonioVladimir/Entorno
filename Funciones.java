@@ -1,7 +1,9 @@
 import java.util.Arrays;
 
 public class Funciones {
-	public Funciones() {}
+
+	public Funciones() {
+	}
 
 	public Boolean Funcion1(int num) {
 
@@ -78,11 +80,12 @@ public class Funciones {
 		return CadenaConcatenada;
 
 	}
-	public int Funcion5(int [] num) {
+
+	public int Funcion5(int[] num) {
 
 		int tam = num.length;
-		int sum = 0; 
-		int [] numarray = new int [tam];
+		int sum = 0;
+		int[] numarray = new int[tam];
 
 		for (int cont = 0; cont < tam; cont++) {
 			numarray[cont] = num[cont];
