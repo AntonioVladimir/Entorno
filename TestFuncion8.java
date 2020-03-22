@@ -76,4 +76,15 @@ public class TestFuncion8 {
 	void testListaNula() {
 		assertFalse(null, false);
 	}
+
+	// Pruebas realizadas por Berny Jimenez Sanchez
+		@Test
+		@DisplayName("Test de Caja Negra Comprobación salida con alumnoque no realizo trabajo")
+		void testNotWork() {
+
+			String[] alumnossintrabajar = { "Rafael", "Jose", "Vladi", "Berny" };
+			int[][] tiempoDeTrabajo = { { 1, 2, 3, 4 }, { 54, 65, 89, 0 } };
+
+			assertNotNull(func.Funcion8(alumnossintrabajar, tiempoDeTrabajo));
+		}
 }
