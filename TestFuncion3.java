@@ -11,61 +11,68 @@ import org.junit.jupiter.api.Test;
 
 public class TestFuncion3 {
 
-		static int contpruebas = 0;
-		static Funciones func = null;
+	static int contpruebas = 0;
+	static Funciones func = null;
 
-		@BeforeAll
-		static void prepararPruebas() {
-			System.out.println("Empezamos las Pruebas.");
-			func = new Funciones();
-		}
+	@BeforeAll
+	static void prepararPruebas() {
+		System.out.println("Empezamos las Pruebas.");
+		func = new Funciones();
+	}
 
-		@BeforeEach
-		private void contador() {
-			contpruebas++;
-			System.out.println("Vamos a realizar la prueba "+contpruebas);
-		}
+	@BeforeEach
+	private void contador() {
+		contpruebas++;
+		System.out.println("Vamos a realizar la prueba "+contpruebas);
+	}
+	
+	@AfterEach
+	private void vecespruebas() {
+		System.out.println("Se a realizado "+ contpruebas +" Pruebas.");
+	}
 
-		@AfterEach
-		private void vecespruebas() {
-			System.out.println("Se a realizado "+ contpruebas +" Pruebas.");
-		}
+	@AfterAll
+	static void terminarPruebas() {
+		contpruebas = 0;
+		func = null;
+		System.out.println("Se han terminado de ejecutar todas las pruebas");
+	}
 
-		@AfterAll
-		static void terminarPruebas() {
-			contpruebas = 0;
-			func = null;
-			System.out.println("Se han terminado de ejecutar todas las pruebas");
-		}
+	@Test//Aqui comienza las pruebas de Jose Manuel
+	@DisplayName("Test de Caja Negra Comprobación la salida no es nula")
+	void testNoNulo() {
 
-		@Test//Aqui comienza las pruebas de Jose Manuel
-		@DisplayName("Test de Caja Negra Comprobación la salida no es nula")
-		void testNoNulo() {
+		//Estamo comprobando que la salida del metodo no se nula
+		assertNotNull(func.Funcion3(1));
 
-			//Estamo comprobando que la salida del metodo no se nula
-			assertNotNull(func.Funcion3(1));
+	}
+	
+	@Test
+	@DisplayName("Test de Caja Negra Comprobación la salida se correcta")
+	void testEsCero() {
 
-		}
-		
-		@Test
-		@DisplayName("Test de Caja Negra Comprobación la salida se correcta")
-		void testEsCero() {
-
-			//Estamo comprobando que la salida salga 0, ya que no es divisible entre 7
-			assertEquals(0,func.Funcion3(4));
-
-		}
-
-		//Pruebas realizadas por Rafael Oliva Ramirez
-		@Test
-		@DisplayName("Test de Caja Negra Comprobación no es 0")
-		void testNotSame() {
-
-			//Estamo comprobando que la salida no se 0, ya que es divisible entre 7
-			assertNotSame(0,func.Funcion3(21));
-
-		}
+		//Estamo comprobando que la salida salga 0, ya que no es divisible entre 7
+		assertEquals(0,func.Funcion3(4));
 
 	}
 
+	//Pruebas realizadas por Rafael Oliva Ramirez
+	@Test
+	@DisplayName("Test de Caja Negra Comprobación no es 0")
+	void testNotSame() {
 
+		//Estamo comprobando que la salida no se 0, ya que es divisible entre 7
+		assertNotSame(0,func.Funcion3(21));
+
+	}
+		
+	//Test realizado por Antonio Vladimir Ortega Chinchilla 
+	@Test
+	@DisplayName("Test de Caja Negra Erroneo")
+	void testValorSuperior() {
+		
+		assertEquals(0,func.Funcion3(5));
+
+	}
+
+}
