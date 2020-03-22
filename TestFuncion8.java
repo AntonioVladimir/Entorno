@@ -1,5 +1,4 @@
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -10,11 +9,11 @@ import org.junit.jupiter.api.Test;
 public class TestFuncion8 {
 
 
-			 int contpruebas = 0;
-			 Funciones func = null;
+			static int contpruebas = 0;
+			static Funciones func = null;
 
 			@BeforeAll
-			void prepararPruebas() {
+			static void prepararPruebas() {
 				System.out.println("Empezamos las Pruebas.");
 				func = new Funciones();
 			}
@@ -31,7 +30,7 @@ public class TestFuncion8 {
 			}
 
 			@AfterAll
-			void terminarPruebas() {
+			static void terminarPruebas() {
 				contpruebas = 0;
 				func = null;
 				System.out.println("Se han terminado de ejecutar todas las pruebas");
@@ -59,6 +58,17 @@ public class TestFuncion8 {
 				int[][] tiemposDeTrabajo = {{500,650,720,800},{100,200,350,490}};
 
 				assertTrue(func.Funcion8(alumnos, tiemposDeTrabajo));	
+		}
+
+	//Pruebas realizadas por Rafael Oliva Ramirez
+		@Test
+		@DisplayName("Test de Caja Negra Comprobación salida no nula")
+		void testNotNull() {
+
+			String [] alumnos = {"Rafael","Jose","Vladi","Berny"};
+	        int[][] tiemposDeTrabajos = {{1,2,3,4} , {54,65,89,78}};
+
+			assertNotNull(func.Funcion8(alumnos, tiemposDeTrabajos));	
 		}
 
 }
