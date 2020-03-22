@@ -76,13 +76,22 @@ public class TestFuncion5 {
 		assertEquals(2027, func.Funcion5(num));//La salida tiene que ser 2027
 
 	}
-		
+
 	//Tests realizada por Antonio Vladimir Ortega Chinchilla
 	@Test
 	@DisplayName("Test de Caja Negra Probamos si el resultado es correcto(Incluso con numeros negativos)")
 	void Test() {
 		int [] num = {-1,-5,-65};
 		assertSame(-71, func.Funcion5(num));
+
+	}
+
+	//Test realizado por Jose Manuel
+	@Test
+	@DisplayName("Test de Caja Negra Probara que un String no es igual que un int")
+	void Suma() {
+		int[] num = { 520, 10, 15, 9 };
+		assertNotSame("554", func.Funcion5(num));
 
 	}
 
