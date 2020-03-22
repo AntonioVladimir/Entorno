@@ -39,10 +39,26 @@ public class TestFuncion6 {
 		//assertTrue(func.Funcion6(50));//Tiene que salir True
 		double [] coas = {64.3,6.8,2};  
 		assertEquals("[257.2, 27.2, 8.0]", func.Funcion6(coas));	
-		
 	}
 
-	
+	//Prueba realizada por Rafael Oliva Ramirez
+	@Test
+	@DisplayName("Test de Caja Negra Comprobación salida no nula")
+	void testNoNull() {
+
+	double [] coas = {6.3,68,2};
+	assertNotNull(func.Funcion6(coas));
+
+	}
+
+	@Test
+	@DisplayName("Test de caja Negra Comproboción resultado correcto")
+	void testCorrecto() {
+
+	double [] num1 = {2.2,8.4,16,48};
+	assertSame("[8.8, 33.6, 64.0, 192.0]",func.Funcion6(num1));
+	}
+
 
 }
 
