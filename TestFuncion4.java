@@ -55,8 +55,16 @@ class TestFuncion4 {
 	@Test
 	@DisplayName("Prueba con elemento nulo")
 	void testElementosNulos(){
-		assertNull(null,null);
+		assertNull(null,null);//Funcionan en distintas versiones.
 		
+	}
+
+	//Pruebas realizadas por Rafael Oliva Ramirez
+	@Test
+	@DisplayName("Prueba de caja negra cuatro cadenas con un solo caracter ")
+	void testUnSoloCaracter(){
+		String [] caracter = {"A","v","b","e"};		
+		assertEquals("-v-b-",func.Funcion4(caracter));
 	}
 
 }
