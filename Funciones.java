@@ -1,7 +1,6 @@
 import java.util.Arrays;
 
 public class Funciones {
-
 	public Funciones() {}
 
 	public Boolean Funcion1(int num) {
@@ -107,6 +106,7 @@ public class Funciones {
 
 			} else {
 				num2[cont] = num1[cont] * w;
+
 			}
 		}
 
@@ -128,6 +128,7 @@ public class Funciones {
                 }else {
                 	cadena ="";
                 }
+
             }
 
         } else {
@@ -138,8 +139,8 @@ public class Funciones {
 
     	}
 
-	public boolean Funcion8(String[] alumnos, int[][] tiemposDeTrabajos){
-			int t = 500;
+	public boolean Funcion8(String[] alumnos, int[][] tiemposDeTrabajos){	       
+				int t = 500;
 		        int sumatorio = 0;
 		        boolean result = true;
 		        for(int i = 0; i < tiemposDeTrabajos.length; i++){
@@ -153,5 +154,4 @@ public class Funciones {
 		        }
 		        return result;
 		}
-
 }
