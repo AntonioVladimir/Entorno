@@ -75,7 +75,7 @@ public class TestFuncion3 {
 
 	}
 
-	//Pruebas realizadas por Berny Jimenez Sanchez
+	//Pruebas realizadas por Berny Jimenez Sanchez 
 		@Test
 		@DisplayName("Test de Caja Negra Comprobación no es 0")
 		void testSame() {
