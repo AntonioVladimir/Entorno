@@ -1,8 +1,9 @@
-import java.util.Arrays;
+import java.util.Array
+s;
+
 
 public class Funciones {
-	public Funciones() {
-	}
+	public Funciones() {}
 
 	public Boolean Funcion1(int num) {
 
@@ -155,4 +156,5 @@ public class Funciones {
 		        }
 		        return result;
 		}
+
 }
