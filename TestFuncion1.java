@@ -74,6 +74,13 @@ public class TestFuncion1 {
 	void testIgual() {
 		assertSame(true, func.Funcion1(21));//la salida tiene que ser true
 	}
+	
+	//Prueba realizada por Antonio Vladimir Ortega Chinchilla
+	@Test
+	@DisplayName("Test Correcto")
+	void testCorrecto() {
+		assertEquals(false, func.Funcion1(22));
+	}
 
 }
 
