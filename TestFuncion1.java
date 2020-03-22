@@ -34,10 +34,10 @@ public class TestFuncion1 {
 
 	@Test
 	@DisplayName("Test de Caja Negra Comprobación numero es divisible entre x")
-	void testTrue() {
+	void testTrueBerny() {
 
 		//Estamos comprobando si la salida es correcta.
-		assertTrue(func.Funcion1(230));
+		assertTrue(func.Funcion1(21));
 
 	}
 
