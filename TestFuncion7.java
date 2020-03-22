@@ -1,4 +1,5 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotSame;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
@@ -38,30 +39,30 @@ class TestFuncion7 {
 		func = null;
 		System.out.println("Se han terminado de ejecutar todas las pruebas");
 	}
-	
-	//	Tests realizados por Antonio Vladimir Ortega Chinchilla
+
+	//Tests realizados por Antonio Vladimir Ortega Chinchilla
 	@Test
 	@DisplayName("Test de Caja Negra Valores Vacios")
 	void testConCadenaVacia() {
-		
+
 		String[] listaDeCadenas = {""};
 		assertEquals("",func.Funcion7(listaDeCadenas));
 	}
-	
+
 	@Test
 	@DisplayName("Test de Caja Negra Valores Correctos")
 	void testDeStrings() {
-		
+
 		String [] listaDeCadenas = {"Hipopotamo","Rinoceronte","Melocoton","Sacapuntas"};
 		assertEquals("[pot, cer, cot, pun]", func.Funcion7(listaDeCadenas));
 	}
-	
+
 	@Test
 	@DisplayName("Prueba Con elemento No Nulo") 
 	void testElementosNoNulos(){
 		String [] PruebaValorNoNulo = {"Jose Luis","Amapolo El Del Bolo"};
 		assertNotNull(func.Funcion7(PruebaValorNoNulo));
-		
+
 	}
 	@Test
 	@DisplayName("Test de Caja Negra Valor 1 Elemento")
@@ -79,5 +80,12 @@ class TestFuncion7 {
 		assertNotSame(nulo,func.Funcion7(listaDeCadenas));
 	}
 
+	// Test realizado por Jose Manuel
+	@Test
+	@DisplayName("Test de Caja Negra con varios elementos")
+	void VariosElementos() {
+		String[] VariosElementos = { "CuAreNtena", "Pokemon", "Coronavirus" };
+		assertNotEquals("[tena, Pok, irus]", func.Funcion7(VariosElementos));
+	}
 }
 
