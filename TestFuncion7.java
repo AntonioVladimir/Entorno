@@ -87,5 +87,13 @@ class TestFuncion7 {
 		String[] VariosElementos = { "CuAreNtena", "Pokemon", "Coronavirus" };
 		assertNotEquals("[tena, Pok, irus]", func.Funcion7(VariosElementos));
 	}
+
+	// Test realizado por Berny Jimenez Sanchez
+		@Test
+		@DisplayName("Test de Caja Negra con varios elementos al azar")
+		void Valores() {
+			String[] Valores = { "Yogurmon", "Trufamon", "Melenmon" };
+			assertNotEquals("[Yogu, Truf, Mele]", func.Funcion7(Valores));
+		}
 }
 
