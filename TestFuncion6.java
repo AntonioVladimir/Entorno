@@ -52,13 +52,19 @@ public class TestFuncion6 {
 	}
 
 	@Test
-	@DisplayName("Test de caja Negra Comproboción resultado correcto")
+	@DisplayName("Test de caja Negra probamos si dos referencias a objetos apuntan al mismo objeto o no")
 	void testCorrecto() {
 
-	double [] num1 = {2.2,8.4,16,48};
-	assertSame("[8.8, 33.6, 64.0, 192.0]",func.Funcion6(num1));
+		double[] num1 = { 2.2, 8.4, 16, 48 };
+		assertNotSame("[8.8, 33.6, 64, 192]", func.Funcion6(num1));
+	} 
+	
+	// Prueba realizada por Antonio Vladimir Ortega Chinchilla
+	@Test
+	@DisplayName("Test de Caja Negra con  valor igual a 0")
+	void testValoreCero() {
+		double[] num1 = {0.0};
+		assertEquals("[0.0]", func.Funcion6(num1));
 	}
 
-
 }
-
